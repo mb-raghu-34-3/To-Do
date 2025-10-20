@@ -1,0 +1,27 @@
+{
+  "name": "to-do",
+  "version": "1.0.0",
+  "description": "Full Stack To Do app with React-Vite",
+  "main": "index.js",
+  "dependencies": {
+  "@supabase/supabase-js": "^2.75.1",
+  "body-parser": "^1.15.2",
+  "cors": "^2.8.5",
+  "dotenv": "^16.0.1",
+  "express": "^4.14.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --watch index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mb-raghu-34-3/To-Do.git"
+  },
+  "author": "Raghunandan Yadav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mb-raghu-34-3/To-Do/issues"
+  },
+  "homepage": "https://github.com/mb-raghu-34-3/To-Do#readme"
+}
