@@ -24,7 +24,6 @@ const ToDoApp = () => {
   }, []);
 
   useEffect(()=>{
-    console.log('on',todos)
     setListDoTo(todos)
   },[todos])
 
