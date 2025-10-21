@@ -6,7 +6,6 @@ const supabase = require('./supabase')
 let cors = require('cors')
 const path = require('path');
 
-const json = {"message": "Hello json"}
 app.use(express.static(path.join(__dirname, 'client', 'dist')));
 
 app.use(bodyParser.json())
@@ -75,7 +74,6 @@ app.get('/api/todos', async(req,res)=>{
 app.post('/api/todos', async(req,res)=>{
     try {
         const { text, id } = req.body;
-        console.log(req.body)
         const { data, error } = await supabase
         .from('todo')
         .insert({text:text, user_id:id})
@@ -107,7 +105,6 @@ app.patch('/api/todos/:id/toggle',async (req,res) => {
     try {
         let {id: todoId} = req.params
         let {completed:isDOne} = req.body
-        console.log(req.params,req.body)
         const { data, error } = await supabase
                     .from('todo')
                     .update({ completed: !isDOne })
