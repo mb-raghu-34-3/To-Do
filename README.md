@@ -70,7 +70,7 @@ npm run dev
 
 #### Install Backend Dependencies
 
-Go to the **`server/`** directory and install the backend dependencies:
+Go to the **`root/`** directory and install the backend dependencies:
 
 ```bash
 npm install
